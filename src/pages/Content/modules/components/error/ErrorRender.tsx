@@ -1,7 +1,11 @@
 import React from 'react';
 import { FallbackProps } from 'react-error-boundary';
 import styled from 'styled-components';
-import { HOME_WEBSITE } from '../../constants';
+
+// NOTE: the old tasksforcanvas.info/support page now redirects to
+// BetterCampus, so support requests go to the repo issue tracker instead.
+const SUPPORT_URL =
+  'https://github.com/UseBetterCanvas/canvas-task-extension/issues';
 
 const ErrorWrapper = styled.div`
   padding: 10px 0px;
@@ -29,7 +33,7 @@ export default function ErrorRender({
       <br />
       {failureMessage}
       <ErrorDiv>{error.message}</ErrorDiv>
-      <SupportLink href={HOME_WEBSITE + '/support?ref=canvas'} target="_blank">
+      <SupportLink href={SUPPORT_URL} target="_blank">
         {supportText}
       </SupportLink>
     </ErrorWrapper>
