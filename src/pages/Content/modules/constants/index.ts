@@ -13,9 +13,10 @@ export const THEME_COLOR_LIGHT = 'rgba(199, 205, 209)';
 
 export const CLIENT_ID_LENGTH = 9;
 
+// Kept for demo-mode detection only (isDemo/detectSettings compare the
+// page URL against it). It is never opened as a link: the old
+// tasksforcanvas.info domain now redirects to BetterCampus.
 export const HOME_WEBSITE = 'https://www.tasksforcanvas.info';
-export const UNINSTALL_URL = 'https://www.tasksforcanvas.info/uninstall';
-export const INSTALL_URL = 'https://www.tasksforcanvas.info/getting-started';
 export const EXPERIMENT_CONFIG_URL =
   'https://canvas-task-static.onrender.com/live.json';
 
